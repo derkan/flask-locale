@@ -4,6 +4,12 @@ Implements i18n and l10n support for Flask.  This is based on the old [Flask-Loc
 
 You can use this extension to translate your applications really easily. No babel preperation is needed. Just put your English text and its translation in a file.
 
+## Install
+
+```sh
+pip install Flask-Locale
+```
+
 ## Quick Start
 - For very quick test look at `demo` directory.
 
