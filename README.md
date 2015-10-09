@@ -2,6 +2,8 @@
 
 Implements i18n and l10n support for Flask.  This is based on the old [Flask-Locale](http://github.com/whtsky/whtsky-locale/) extension. Uses files or database to get translations.
 
+You can use this extension to translate your applications really easily. No babel preperation is needed. Just put your English text and its translation in a file.
+
 ## Quick Start
 - For very quick test look at `demo` directory.
 
