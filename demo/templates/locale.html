@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask-Locale</title>
+</head>
+<body>
+ <h2>Translate with parameters in template</h2>
+ {{ _('Hello %(name)s', name=name) }}
+ <br>
+ <h2>Translated in Python Code:</h2>
+ {{ py_translated }}
+</body>
+</html>
