@@ -186,7 +186,7 @@ class Locale(object):
 
         This has to return the locale as string (eg: ``'de_AT'``, ``'en_US'``)
         """
-        assert not getattr(self, 'locale_selector_func', None), 'a localeselector function is already registered'
+        assert getattr(self, 'locale_selector_func', None) is None, 'a localeselector function is already registered'
         self.locale_selector_func = f
         return f
 
@@ -231,12 +231,11 @@ class Locale(object):
                 continue
             code = code.replace("-", "_")
             parts = code.split("_")
-            if len(parts) > 2:
-                continue
             if code in self._supported_locales:
                 return self.get(code)
-            if parts[0].lower() in self._supported_locales:
-                return self.get(parts[0].lower())
+            for c in self._supported_locales:
+                if c.startswith(parts[0].lower()+'_'):
+                    return self.get(c)
         return self.get(app.config['DEFAULT_LOCALE'])
 
     def get(self, code):
