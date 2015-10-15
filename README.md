@@ -49,7 +49,6 @@ from flask import Flask, request, render_template, g
 from flask_locale import Locale, _
 
 app = Flask(__name__)
-app.config['DEFAULT_LOCALE'] = 'tr_TR'
 app.config['LOCALE_PATH'] = 'translations'
 
 locale = Locale(app)
