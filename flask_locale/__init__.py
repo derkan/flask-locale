@@ -152,7 +152,7 @@ class Locale(object):
                 if locale not in _translations:
                     _translations[locale] = {}
 
-                for i, row in enumerate(csv.reader(f)):
+                for i, row in enumerate(csv.reader(f, delimiter=',', skipinitialspace=True)):
                     if not row or len(row) < 2:
                         continue
                     row = [to_unicode(c).strip() for c in row]
