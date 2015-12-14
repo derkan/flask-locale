@@ -9,7 +9,7 @@ from setuptools import setup
 
 setup(
     name='Flask-Locale',
-    version='0.4.1',
+    version='0.4.2',
     url='http://github.com/derkan/flask-locale',
     license='BSD',
     author='Erkan Durmus',
