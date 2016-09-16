@@ -25,7 +25,6 @@ setup(
         'Jinja2'
     ],
     classifiers=[
-        'Development Status :: 1.0.0',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
