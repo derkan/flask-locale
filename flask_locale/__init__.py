@@ -16,7 +16,9 @@ from flask import _request_ctx_stack, request
 from speaklater import make_lazy_string
 
 __all__ = ('Locale', 'refresh', 'translate', 'to_unicode', '_', 'do_translate')
-
+is_python3 = sys.version_info.major == 3
+if is_python3:
+    unicode = str
 
 def get_app():
     ctx = _request_ctx_stack.top
