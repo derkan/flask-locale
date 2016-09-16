@@ -5,11 +5,11 @@ Flask-Locale
 Adds i18n/l10n support to Flask applications.
 """
 from setuptools import setup
-
+import flask_locale
 
 setup(
     name='Flask-Locale',
-    version='1.0.0',
+    version=flask_locale.__version__,
     url='http://github.com/derkan/flask-locale',
     license='BSD',
     author='Erkan Durmus',
