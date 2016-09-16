@@ -5,7 +5,7 @@ from flask_locale import Locale, _
 
 app = Flask(__name__)
 # DEFAULT_LOCALE is the language used for keys ins translation files:
-app.config['DEFAULT_LOCALE'] = 'en_US'
+app.config['DEFAULT_LOCALE'] = 'tr_TR'
 app.config['LOCALE_PATH'] = 'translations'
 app.config['SECRET_KEY'] = 'translations****'
 
