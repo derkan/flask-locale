@@ -136,7 +136,7 @@ When user's locale is changed, call `refresh()` method:
 ```py
 user.locale = request.form['locale']
 locale.refresh()
-flash(translate('Language was changed'))
+flash(_('Language is changed'))
 ```
 
 ### Translate Functions
