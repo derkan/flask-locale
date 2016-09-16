@@ -16,6 +16,7 @@ import unicodedata
 from flask import _request_ctx_stack, request
 from speaklater import make_lazy_string
 
+__version__ = '1.0.0'
 __all__ = ('Locale', 'refresh', 'translate', 'to_unicode', '_', 'do_translate')
 is_python3 = sys.version_info.major == 3
 if is_python3:
