@@ -9,7 +9,7 @@ from setuptools import setup
 
 setup(
     name='Flask-Locale',
-    version='0.4.2',
+    version='1.0.0',
     url='http://github.com/derkan/flask-locale',
     license='BSD',
     author='Erkan Durmus',
@@ -25,7 +25,7 @@ setup(
         'Jinja2'
     ],
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 1.0.0',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
