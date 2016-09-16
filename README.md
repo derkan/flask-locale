@@ -11,6 +11,7 @@ pip install Flask-Locale
 ```
 
 ## Quick Start
+- Py3 ready
 - For very quick test look at `demo` directory.
 
 - Create a directory `translations` at app root. 
