@@ -8,6 +8,7 @@ Some code is from Tornado.Locale
 """
 
 import os
+import sys
 import re
 import csv
 import unicodedata
