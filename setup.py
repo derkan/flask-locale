@@ -15,7 +15,7 @@ setup(
     author_email='derkan@gmail.com',
     description='Adds i18n/l10n support to Flask applications easily. Uses CSV files(or database) to load translations.',
     long_description=open('README.rst').read(),
-    py_modules=['flask_locale'],
+    packages=['flask_locale'],
     zip_safe=False,
     platforms='any',
     install_requires=[
