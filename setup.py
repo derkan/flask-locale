@@ -8,7 +8,7 @@ from setuptools import setup
 
 setup(
     name='Flask-Locale',
-    version='1.0.3',
+    version='1.0.4',
     url='http://github.com/derkan/flask-locale',
     license='BSD',
     author='Erkan Durmus',
@@ -20,7 +20,7 @@ setup(
     platforms='any',
     install_requires=[
         'Flask',
-        'speaklater3'
+        'speaklater'
     ],
     classifiers=[
         'Environment :: Web Environment',
