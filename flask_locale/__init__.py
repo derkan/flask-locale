@@ -217,8 +217,7 @@ class Locale(object):
                     score = 1.0
                 locales.append((parts[0], score))
             if locales:
-                # locales.sort(key=lambda(l, s): s, reverse=True)
-                locales.sort(key=get_loc_key, reverse=True)
+                locales.sort(reverse=True)
                 codes = [l[0] for l in locales]
                 return self.get_closest(*codes)
         app = get_app()
